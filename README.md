@@ -20,7 +20,7 @@ Gemini Code Helper is a powerful VS Code extension that leverages the Google Gem
 
 Clone the repository:
 
-    git clone https://github.com/your-repo/vscode-api-tester.git
+    git clone https://github.com/div-tom1506/gemini-code-helper
     cd vscode-api-tester
 Open the project in VS Code:
 
