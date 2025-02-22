@@ -2,7 +2,7 @@
   "name": "gemini-code-helper",
   "displayName": "Gemini Code Helper",
   "description": "Gemini Code Helper – AI-powered VS Code extension that provides intelligent explanations for selected code snippets using Google Gemini.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "assets/icon.png",
   "engines": {
     "vscode": "^1.97.0"
