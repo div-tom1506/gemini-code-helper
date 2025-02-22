@@ -1,0 +1,52 @@
+{
+  "name": "gemini-code-helper",
+  "displayName": "Gemini Code Helper",
+  "description": "Gemini Code Helper – AI-powered VS Code extension that provides intelligent explanations for selected code snippets using Google Gemini.",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "AI",
+    "Education",
+    "Programming Languages"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "geminiCodeHelper.explainCode",
+        "title": "gemini code helper"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test",
+    "compile": "vsce package"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.97.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "@vscode/vsce": "^3.2.2",
+    "eslint": "^9.19.0"
+  },
+  "author": {
+    "name": "Divyanshu Kumar"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/div-tom1506/vscode-api-tester-extension"
+  },
+  "publisher": "div-tom1506",
+  "dependencies": {
+    "@google/generative-ai": "^0.22.0",
+    "dotenv": "^16.4.7"
+  }
+}
