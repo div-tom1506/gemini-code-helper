@@ -52,11 +52,22 @@ Press `Ctrl+Shift+P` and choose "**gemini code helper**".
 
 View AI-generated explanations directly in the editor.
 
+## Troubleshooting
+
+401 Unauthorized (Invalid API Key)
+
+Ensure the API Key is correct and added in .env.
+
+Verify that Gemini API is enabled in Google Cloud Console.
+
+If issues persist, regenerate a new API key.
+
 ## Documentation
 
 **Google Gemini API Docs:** Google Gemini API
 
 **VS Code API Docs:** VS Code API
+
 
 ## Contributing
 
@@ -67,16 +78,6 @@ Fork the repository
 Create a new branch for your feature or fix
 
 Submit a pull request with your changes
-
-## Troubleshooting
-
-401 Unauthorized (Invalid API Key)
-
-Ensure the API Key is correct and added in .env.
-
-Verify that Gemini API is enabled in Google Cloud Console.
-
-If issues persist, regenerate a new API key.
 
 ## License
 
