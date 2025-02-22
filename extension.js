@@ -1,8 +1,9 @@
 const vscode = require('vscode');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
-require('dotenv').config();
+const { GEMINI_API_KEY } = require('./config');
 
-const API_KEY = null;
+const API_KEY = GEMINI_API_KEY;
+
 if (!API_KEY) {
     console.error("⚠️ API Key not found! Set GEMINI_API_KEY in .env or environment variables.");
 }

@@ -29,9 +29,11 @@ Open the project in VS Code:
 
 Obtain your Google Gemini API Key from Google AI Studio.
 
-Create a .env file in the root directory and add:
+Create a config.js file in the root directory and add:
 
-```GEMINI_API_KEY=your-api-key-here```
+`module.exports = {
+    GEMINI_API_KEY: "your-api-key-here"
+}`
 
 Install dependencies and compile:
 

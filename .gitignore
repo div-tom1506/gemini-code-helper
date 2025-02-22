@@ -2,4 +2,5 @@ node_modules
 .vscode-test/
 *.vsix
 test
-.env
+config.js
+
