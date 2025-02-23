@@ -47,6 +47,7 @@
   },
   "publisher": "div-tom1506",
   "dependencies": {
-    "@google/generative-ai": "^0.22.0"
+    "@google/generative-ai": "^0.22.0",
+    "marked": "^15.0.7"
   }
 }

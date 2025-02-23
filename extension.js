@@ -1,6 +1,7 @@
 const vscode = require('vscode');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const { GEMINI_API_KEY } = require('./config');
+const marked = require('marked');
 
 const API_KEY = GEMINI_API_KEY;
 
@@ -16,7 +17,8 @@ async function getCodeExplanation(codeSnippet, language) {
         const result = await model.generateContent({
             contents: [{ role: "user", parts: [{ text: `Explain the following ${language} code:\n${codeSnippet}` }] }]
         });
-        return result.response.candidates[0].content.parts[0].text;
+        let explanation = result.response.candidates[0].content.parts[0].text;
+        return marked.parse(explanation);
     } catch (error) {
         console.error("Error fetching explanation:", error.response?.data || error.message);
         return "⚠️ Failed to get explanation. Please check your API key and try again.";
@@ -32,6 +34,8 @@ function generateWebviewContent(codeSnippet, explanation, language) {
             h2 { color: #58a6ff; text-align: center; }
             pre { background: #282c34; color: #abb2bf; padding: 15px; border-radius: 8px; overflow-x: auto; font-size: 14px; }
             .explanation { margin-top: 20px; padding: 15px; background: #2d333b; border-left: 5px solid #58a6ff; color: #c9d1d9; font-size: 14px; line-height: 1.5; border-radius: 5px; }
+            code { background: #444c56; padding: 2px 4px; border-radius: 4px; color:rgb(46, 203, 62); }
+            ul, ol { margin-left: 20px; }
         </style>
     </head>
     <body>
