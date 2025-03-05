@@ -16,6 +16,9 @@ Gemini Code Helper is a powerful VS Code extension that leverages the Google Gem
 
 - [x] **Google Gemini API Integration:** Uses Google Gemini Pro for generating responses.
 
+## VS Code Extension Link 
+### [gemini-code-helper](https://marketplace.visualstudio.com/items?itemName=div-tom1506.gemini-code-helper)
+
 ## Installation
 
 Clone the repository:
